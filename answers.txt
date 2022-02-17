@@ -1,0 +1,32 @@
+4.
+
+The worst case for linear search would either be if the key it was searching for was the last value or if the key was not in the list.  The worst case for binary search
+is if the key corresponds to a value that is either the very first value or the very last one.
+
+5.
+
+The best case scenario for linear search is if the key is the first value of the list.  For binary search the best case is if the key is the middle value of the list
+
+8.
+|        n |   linear |   binary |
+|----------|----------|----------|
+|       10 |   14.653 |   14.590 |
+|      100 |   14.647 |   14.620 |
+|     1000 |   14.622 |   14.594 |
+|    10000 |   14.655 |   14.616 |
+|   100000 |   14.623 |   15.889 |
+|  1000000 |   61.436 |   14.646 |
+| 10000000 |  389.520 |   14.720 |
+
+9.
+
+They do as the run time for 10,000,000 in binary search is just under 15 milliseconds which is lower than the uperbound of Log(10,000,000) which is 23.25.  The same is true
+for linear seach.  It was expected to take, in the last case, 10,000,000 milliseconds to complete the task it it did so in a fraction of the time.
+
+10.
+
+a. The worst case for using linear search k times would be n^k as it takes O(n) to search the list once times the bumber, k, times you search thorugh the list.
+b. It takes n^2 time to sort the list and then log(n) time to then search through the list, times the number of times that list is searched, k, you are left with the 
+   equation n^2 + (log(n)^k).
+c. Given the two equations above if you are searching thorugh the list 3 or more times it would be quicker to sort the list and then use binary search instead of searching
+   linearlly.
